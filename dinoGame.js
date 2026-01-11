@@ -20,7 +20,7 @@ game.bgm1.loop = true;
 //　複数画像読み込み
 let imageLoadCounter = 0;
 for (const imageName of imageNames) {
-  const imagePath = `${imageName}.png`;
+  const imagePath = `image/${imageName}.png`;
   game.image[imageName] = new Image();
   game.image[imageName].src = imagePath;
   game.image[imageName].onload = () => {
